@@ -8,12 +8,19 @@
 	<head>
 		<title>SofTech</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Os melhores computadores do mercado!, busque e escolha o melhor pc ou notebook para você!">
+		<meta name="theme-color" content="#f0f0f0">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="manifest" href="manifest.json">
+		<link rel="apple-touch-icon" href="./images/AppIcons/Assets.xcassets/AppIcon.appiconset/128.png">
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 	</head>
 	<body class="is-preload">
 
+		<!-- SERVICE WORKER -->
+		
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
@@ -45,7 +52,7 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/desktop-computer-500x500.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Nossos Computadores</h2>
@@ -57,7 +64,7 @@
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/dollar-sign-16975.png" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Pagamentos</h2>
@@ -184,6 +191,16 @@
 			</footer>
 
 		<!-- Scripts -->
+		<script>
+			if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+		console.log('Service Worker registrado com sucesso com o escopo:', registration.scope);
+	  }).catch(function(error) {
+		console.log('Falha ao registrar o Service Worker:', error);
+	  });
+	}
+		</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
