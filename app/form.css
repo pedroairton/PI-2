@@ -3,6 +3,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     font-family: sans-serif;
+    margin: 0 auto;
 }
 
 #container{
@@ -28,6 +29,18 @@ body{
     justify-content: center;
     display: flex;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#envio{
+  grid-column: 2/3;
+  justify-content: center;
+  display: flex;
+}
+button{
+  width: 5rem;
+  height: 3rem;
+  background-color: #ffd700;
+  border-radius: 9%;
 }
 
 
@@ -70,7 +83,7 @@ body{
     margin-right: 5px;
   }
   
-  .rating input[type="radio"]:checked ~ label {
+  /* .rating input[type="radio"]:checked ~ label {
     color: #ffd700;
     
   }
@@ -79,5 +92,18 @@ body{
   .rating label:hover ~ label {
     color: #ffd700;
     
-  }
+  } */
   
+  .result {
+    margin-bottom: 1rem;
+    margin-left: 10px;
+  }
+
+/*JS*/
+
+.st5 label{
+  color: red;
+}
+.st4 label{
+  color: brown;
+}
