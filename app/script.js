@@ -72,9 +72,9 @@ function calculo() {
 let i = 0
 let label = document.querySelectorAll(`.rating .label.p${i+1}`)
 
-while(i = 0 < label.length) {
-    label[i] = document.querySelector(`.rating .label.p${i+1}`)
-i++
+//while(i = 0 < label.length) {
+//    label[i] = document.querySelector(`.rating .label.p${i+1}`)
+//i++
 }
 label.forEach(function(element,index,array) {
     element.addEventListener('click',function() {
