@@ -71,24 +71,68 @@ function calculo() {
 
 
 
-
-let p1 = document.querySelectorAll('.rating .star.p1')
-
-let label = document.querySelectorAll('.rating .star.p1')
+let label = document.querySelectorAll('.rating .label.p1')
 
 label.forEach(function(element,index,array) {
   element.addEventListener('click',function() {
-    // console.log(array)
+    console.log(array)
     let i = 0
     while(i <= array.length - 1) {
       array[i].classList.remove('ativo')
       i++
     }
-    array[index].classList.add('ativo')
+    for (let ix = 0; ix <= index; ix++) {
+        array[ix].classList.add('ativo')
+    }
   })
 })
 
-// estilizar classe ativo!
+let label2 = document.querySelectorAll('.rating .label.p2')
+
+label2.forEach(function(element,index,array) {
+  element.addEventListener('click',function() {
+    console.log(array)
+    let i = 0
+    while(i <= array.length - 1) {
+      array[i].classList.remove('ativo')
+      i++
+    }
+    for (let ix = 0; ix <= index; ix++) {
+        array[ix].classList.add('ativo')
+    }
+  })
+})
+
+let label3 = document.querySelectorAll('.rating .label.p3')
+
+label3.forEach(function(element,index,array) {
+  element.addEventListener('click',function() {
+    console.log(array)
+    let i = 0
+    while(i <= array.length - 1) {
+      array[i].classList.remove('ativo')
+      i++
+    }
+    for (let ix = 0; ix <= index; ix++) {
+        array[ix].classList.add('ativo')
+    }
+  })
+})
+
+
+
+// label.forEach(function(element,index,array) {
+//   element.addEventListener('click',function() {
+//     // console.log(array)
+//     let i = 0
+//     while(i <= array.length - 1) {
+//       array[i].classList.remove('ativo')
+//       i++
+//     }
+//     array[index].classList.add('ativo')
+//   })
+// })
+
 
 
 
