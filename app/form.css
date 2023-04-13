@@ -47,7 +47,6 @@ button{
 
 
 .rating {
-    /* background-color: #f0f0f0; */
     
     position: relative;
     display: flex;
@@ -56,7 +55,7 @@ button{
     height: 30px;
     width: 150px;
     margin: 10px 0;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
     padding-bottom: 1rem;
     border-bottom: solid 2px #f0f0f0;
   }
@@ -82,28 +81,41 @@ button{
     content: "\2605";
     margin-right: 5px;
   }
-  
-  /* .rating input[type="radio"]:checked ~ label {
-    color: #ffd700;
-    
-  }
-  
-  .rating label:hover,
-  .rating label:hover ~ label {
-    color: #ffd700;
-    
-  } */
-  
+ 
   .result {
     margin-bottom: 1rem;
     margin-left: 10px;
   }
+  /* classe para estrelas selecionadas */
+.rating .star.ativo {
+  color: #FFD700;
+}
+
+/* classe para hover */
+.rating .star:not(.ativo):hover,
+.rating .star:not(.ativo):hover ~ .star {
+  color: #FFD700;
+  cursor: pointer;
+}
+
 
 /*JS*/
 
-.st5 label{
-  color: red;
+.label.ativo {
+  color:#FFD700
 }
-.st4 label{
-  color: brown;
+/* .rating.s1 .label,.rating.s2 .label,.rating.s3 .label,.rating.s4 .label,.rating.s5 .label {
+  color:#ffd700
 }
+.rating.s2 #star5 {
+  color: #a9a9a9
+}
+.rating.s3 #star5, .rating.s3 #star4 {
+  color: #a9a9a9
+}
+.rating.s4 #star5, .rating.s4 #star4, .rating.s4 #star3{
+  color: #a9a9a9
+}
+.rating.s5 #star5, .rating.s5 #star4, .rating.s5 #star3, .rating.s5 #star2{
+  color: #a9a9a9
+} */
