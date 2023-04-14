@@ -16,7 +16,7 @@
       }
     ],    
     
-    "start_url": "http://127.0.0.1:5500/app/",
+    "start_url": "https://formulariosenacidiomas.netlify.app",
     "background_color": "#ffffff",
     "theme_color": "#0051a0",
     "display": "standalone",
