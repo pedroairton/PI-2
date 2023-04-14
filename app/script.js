@@ -2,69 +2,66 @@ let qt = []
 
 qt[0] = document.querySelectorAll('.star.p1')
 
-qt[0].forEach(function(element) {
-    element.addEventListener('click',function() {
-        console.log(element.value)
-        // element.classList.add('ativo')
-        qt[0] = Number(element.value)
-    })
-})
-
-// PERGUNTA 2 
-
 qt[1] = document.querySelectorAll('.star.p2')
-
-qt[1].forEach(function(element) {
-    element.addEventListener('click',function() {
-        console.log(element.value)
-        // element.classList.add('ativo')
-        qt[1] = Number(element.value)
-    })
-})
-
-// PERGUNTA 3
 
 qt[2] = document.querySelectorAll('.star.p3')
 
-qt[2].forEach(function(element) {
-    element.addEventListener('click',function() {
-        console.log(element.value)
-        // element.classList.add('ativo')
-        qt[2] = Number(element.value)
-    })
-})
-
-// PERGUNTA 4
-
 qt[3] = document.querySelectorAll('.star.p4')
-
-qt[3].forEach(function(element) {
-    element.addEventListener('click',function() {
-        console.log(element.value)
-        // element.classList.add('ativo')
-        qt[3] = Number(element.value)
-    })
-})
-
-// PERGUNTA 5
 
 qt[4] = document.querySelectorAll('.star.p5')
 
-qt[4].forEach(function(element) {
+qt.forEach(function(emt,idx,ary) {
+    qt[idx].forEach(function(element){
     element.addEventListener('click',function() {
         console.log(element.value)
         // element.classList.add('ativo')
-        qt[4] = Number(element.value)
+        qt[idx] = Number(element.value)
     })
+})
+})
+
+let qt2 = []
+
+qt2[0] = document.querySelectorAll('.star.p6')
+
+qt2[1] = document.querySelectorAll('.star.p7')
+
+qt2[2] = document.querySelectorAll('.star.p8')
+
+qt2[3] = document.querySelectorAll('.star.p9')
+
+qt2[4] = document.querySelectorAll('.star.p10')
+
+
+//     qt2[1].forEach(function(element){
+//     element.addEventListener('click',function() {
+//         console.log(element.value +'badfcvb')
+//         // element.classList.add('ativo')
+//         qt2[1] = Number(element.value)
+//     })
+// })
+
+qt2.forEach(function(emt,idx,ary,) {
+    qt2[idx].forEach(function(element){
+    element.addEventListener('click',function() {
+        console.log(element.value+'b')
+        // element.classList.add('ativo')
+        qt2[idx] = Number(element.value)
+    })
+})
 })
 
 const rst1 = document.querySelector('.result.f1')
-
+const rst2 = document.querySelector('.result.f2')
 
 function calculo() {
-    let media = (qt[0]+qt[1]+qt[2]+qt[3]+qt[4]) / qt.length
-    console.log(media)
-    rst1.innerHTML = (`A média é ${media}`)
+    let media1 = (qt[0]+qt[1]+qt[2]+qt[3]+qt[4]) / qt.length
+    console.log(media1)
+    rst1.innerHTML = (`A média é de ☆${media1}`)
+
+    let media2 = (qt2[0]+qt2[1]+qt2[2]+qt2[3]+qt2[4]) / qt2.length
+    console.log(media2)
+    rst2.innerHTML = (`A média é de ☆${media2}`)
 }
 
 // ESTILIZAÇÃO
