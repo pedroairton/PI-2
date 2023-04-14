@@ -54,6 +54,9 @@ qt2.forEach(function(emt,idx,ary,) {
 const rst1 = document.querySelector('.result.f1')
 const rst2 = document.querySelector('.result.f2')
 
+const email = document.querySelector('.email')
+
+
 function calculo() {
     let media1 = (qt[0]+qt[1]+qt[2]+qt[3]+qt[4]) / qt.length
     console.log(media1)
@@ -62,6 +65,12 @@ function calculo() {
     let media2 = (qt2[0]+qt2[1]+qt2[2]+qt2[3]+qt2[4]) / qt2.length
     console.log(media2)
     rst2.innerHTML = (`A média é de ☆${media2}`)
+
+    const page = document.querySelector('.page')
+    const msg = document.querySelector('.msg')
+
+    page.classList.add('unactive')
+    msg.classList.remove('unactive')
 }
 
 // ESTILIZAÇÃO
@@ -119,8 +128,6 @@ label.forEach(function(emt,idx,ary) {
 //     array[index].classList.add('ativo')
 //   })
 // })
-
-
 
 
 
