@@ -60,17 +60,22 @@ const email = document.querySelector('.email')
 function calculo() {
     let media1 = (qt[0]+qt[1]+qt[2]+qt[3]+qt[4]) / qt.length
     console.log(media1)
-    rst1.innerHTML = (`A média é de ☆${media1}`)
+    // rst1.innerHTML = (`A média é de ☆${media1}`)
 
     let media2 = (qt2[0]+qt2[1]+qt2[2]+qt2[3]+qt2[4]) / qt2.length
     console.log(media2)
-    rst2.innerHTML = (`A média é de ☆${media2}`)
+    // rst2.innerHTML = (`A média é de ☆${media2}`)
 
     const page = document.querySelector('.page')
     const msg = document.querySelector('.msg')
 
+    if(email.value != '' && media1 >=1 && media2 >=1 ){
     page.classList.add('unactive')
     msg.classList.remove('unactive')
+    } else{
+        const aviso = document.getElementById('aviso')
+        aviso.innerHTML = (`<b>Preencha todos os campos.</b>`)
+    }
 }
 
 // ESTILIZAÇÃO
